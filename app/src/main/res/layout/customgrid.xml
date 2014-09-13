@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView  android:text="@string/hello_world"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:lineSpacingExtra="1dp"
+        android:id="@+id/title"
+        android:layout_gravity="right"
+        android:textColor="@color/Light_Grey" />
+
+    <TextView  android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hoursPlayed"
+        android:gravity="left"
+        android:layout_toRightOf="@id/title"
+        android:textColor="@color/Light_Grey" />
+
+    <TextView  android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paidAmount"
+        android:layout_below="@id/hoursPlayed"
+        android:layout_toRightOf="@id/title"
+        android:textColor="@color/Light_Grey" />
+
+    <TextView  android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actualAmount"
+        android:layout_below="@id/paidAmount"
+        android:layout_toRightOf="@id/title"
+        android:textColor="@color/Light_Grey" />
+
+    <TextView  android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savings"
+        android:layout_below="@id/actualAmount"
+        android:layout_toRightOf="@id/title"
+        android:textColor="@color/Light_Grey" />
+
+    <TextView  android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hoursPerDollar"
+        android:layout_below="@id/savings"
+        android:layout_toRightOf="@id/title"
+        android:textColor="@color/Light_Grey" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:layout_below="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:layout_alignBaseline="@id/paidAmount"/>
+</RelativeLayout>
